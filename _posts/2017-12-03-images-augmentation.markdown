@@ -17,7 +17,7 @@ I have collected 20 pictures for each kinds of water lily, the first 15 for trai
 
 # images augmentation
 
-To augment the images, we will use the [imgaug][imgaug-link]. *It converts a set of input images into a new, much larger set of slightly altered images.* First of all, you should install the package correctly [accoding this Documentation][imgaug-installation-documentation] . Imgaug include many augmentation techniques, such as Crop, Pad, GaussianBlur. Here is the [quick example code to use the library][quick-use-imgaug].
+To augment the images, we will use the [imgaug][imgaug-link]. *It converts a set of input images into a new, much larger set of slightly altered images.* First of all, you should install the package correctly [according this Documentation][imgaug-installation-documentation] . Imgaug include many augmentation techniques, such as Crop, Pad, GaussianBlur. Here is the [quick example code to use the library][quick-use-imgaug].
 
 The following code implement augmentation for one image.
 
@@ -69,15 +69,14 @@ seq = iaa.Sequential([
 
 images_aug = seq.augment_images(images)
 ```
-As you can see, the `images` has 4 dimensions shape *[ images_num, width, height, channel ]*. After augmentation, `images_aug` also has 4 dimensions, and the first dimension is the number of pictures. The follow pictures show one of the augmentation result.
+As you can see, the `images` has 4 dimensions shape *[images_num, width, height, channel]*. After augmentation, `images_aug` also has 4 dimensions, and the first dimension is the number of pictures. The follow pictures show one of the augmentation result.
 
 <img align="left" width="300" height="290" src="/assets/image/blue_1.jpg">
 <img align="center" width="370" height="325" src="/assets/image/blue_1_aug.png">
 <img align="left" width="300" height="290" src="/assets/image/purple_1.jpg">
 <img align="center" width="370" height="325" src="/assets/image/purple_1_aug.png">
 <img align="left" width="300" height="290" src="/assets/image/red_1.jpeg">
-<img align="center" width="370" height="325" src="/assets/image/red_1_aug.png">
-
+<img align="center" width="370" height="325" src="/assets/image/red_1_aug.png"
 
 [google]: https://www.google.com
 [baidu]: https://www.baidu.com
