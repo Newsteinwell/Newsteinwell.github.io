@@ -159,7 +159,7 @@ def augment_fun(seq_,picture_path,color,train_num,augment_num):
 
         images_aug = seq.augment_images(images)
         for j in range(augment_num):
-            plt.figure()                                                             # to save the aumented images
+            plt.figure()                     # to save the aumentation images
             plt.imshow(images_aug[j])
             plt.savefig(picture_path+color+'_'+np.str(i+1)+np.str(j+1)+'.png')
             temp_png = Image.open(picture_path+color+'_'+np.str(i+1)+np.str(j+1)+'.png')
@@ -170,7 +170,6 @@ def augment_fun(seq_,picture_path,color,train_num,augment_num):
 augment_fun(seq,blue_path,'blue',15,10)
 augment_fun(seq,purple_path,'purple',15,10)
 augment_fun(seq,red_path,'red',15,10)
-
 ```
 
 
