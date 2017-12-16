@@ -98,7 +98,7 @@ My work directory appear as follow:
           ...
         - red_20.jpg
 
-The following code augment the training sets, the augmented images will be save into the corresponding directory. Each train image become 11(1+10) images.
+The following code augment the training sets, the augmented images will be save into the corresponding directory. Each train image become 10(1+9) images.
 
 ```python
 import numpy as np
@@ -111,14 +111,6 @@ from imgaug import augmenters as iaa
 blue_path = './lotus/blue_butterfly/'
 red_path = './lotus/red_beauty/'
 purple_path = './lotus/purple_jade/'
-
-#temp_blue = io.imread(blue_path+np.str(1)+'.jpg')
-
-# The array has shape (images_num, width, height, channel) and dtype uint8.
-#images = np.array(
-#    [temp_blue for _ in range(10)],
-#    dtype=np.uint8
-#)
 
 seq = iaa.Sequential([
     iaa.Crop(percent=(0, 0.1)), # random crops
@@ -167,11 +159,77 @@ def augment_fun(seq_,picture_path,color,train_num,augment_num):
             temp_png.save(picture_path+color+'_'+np.str(i+1)+np.str(j+1)+'.jpg')
             plt.close()
 
-augment_fun(seq,blue_path,'blue',15,10)
-augment_fun(seq,purple_path,'purple',15,10)
-augment_fun(seq,red_path,'red',15,10)
-```
+augment_fun(seq,blue_path,'blue',15,9)
+augment_fun(seq,purple_path,'purple',15,9)
+augment_fun(seq,red_path,'red',15,9)
 
+```
+After augmentation, the work directory appear as follow (I delete all the .png images since it's useless):
+
+    - imag_augmentation.py
+    + lotus/
+      + blue_butterfly/
+        - blue_1.jpg
+        - blue_11.jpg
+        - blue_12.jpg
+        ...
+        - blue_19.jpg
+        - blue_2.jpg
+        - blue_21.jpg
+        - blue_22.jpg
+        ...
+        - blue_29.jpg
+        ...
+        - blue_15.jpg
+        - blue_151.jpg
+        - blue_152.jpg
+        ...
+        - blue_159.jpg
+        - blue_16.jpg
+        ...
+        - blue_20.jpg
+      + purple_jade/
+        - purple_1.jpg
+        - purple_11.jpg
+        - purple_12.jpg
+        ...
+        - purple_19.jpg
+        - purple_2.jpg
+        - purple_21.jpg
+        - purple_22.jpg
+        ...
+        - purple_29.jpg
+        ...
+        - purple_15.jpg
+        - purple_151.jpg
+        - purple_152.jpg
+        ...
+        - purple_159.jpg
+        - purple_16.jpg
+        ...
+        - purple_20.jpg
+
+      + red_beauty
+
+        - red_1.jpg
+        - red_11.jpg
+        - red_12.jpg
+        ...
+        - red_19.jpg
+        - red_2.jpg
+        - red_21.jpg
+        - red_22.jpg
+        ...
+        - red_29.jpg
+        ...
+        - red_15.jpg
+        - red_151.jpg
+        - red_152.jpg
+        ...
+        - red_159.jpg
+        - red_16.jpg
+        ...
+        - red_20.jpg
 
 [google]: https://www.google.com
 [baidu]: https://www.baidu.com
