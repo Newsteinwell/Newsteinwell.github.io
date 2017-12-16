@@ -76,7 +76,7 @@ As you can see, the `images` has 4 dimensions shape *[images_num, width, height,
 <img align="left" width="300" height="290" src="/assets/image/purple_1.jpg">
 <img align="center" width="370" height="325" src="/assets/image/purple_1_aug.png">
 <img align="left" width="300" height="290" src="/assets/image/red_1.jpeg">
-<img align="center" width="370" height="325" src="/assets/image/red_1_aug.png"
+<img align="center" width="370" height="325" src="/assets/image/red_1_aug.png">
 
 [google]: https://www.google.com
 [baidu]: https://www.baidu.com
