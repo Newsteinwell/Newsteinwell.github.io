@@ -98,7 +98,7 @@ My work directory appear as follow:
           ...
         - red_20.jpg
 
-The following code augment the training sets, each image become 11(1+10) images.
+The following code augment the training sets, the augmented images will be save into the corresponding directory. Each train image become 11(1+10) images.
 
 ```python
 import numpy as np
