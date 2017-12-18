@@ -6,7 +6,7 @@ categories: image
 ---
 **This post is the first part of images detection and segmentation.**
 # data preparing
- You can find the `water lily` images on [Google][google] or [Baidu][baidu] image but you can take water lily photo by yourself. Here are some examples collected by me:
+ You can find the `water lily` images on [Google][google] or [Baidu][baidu] image but you can also take water lily photo by yourself. Here are some examples collected by me:
 
 <img align="left" width="300" height="290" src="/assets/image/blue_1.jpg">
 <img align="center" width="300" height="290" src="/assets/image/blue_4.jpg">
