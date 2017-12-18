@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "images augmentation"
+title:  "image augmentation"
 date:   2017-12-03 20:21:08 +0800
 categories: image
 ---
 **This post is the first part of images detection and segmentation.**
 # data preparing
- You can find the `water lily` images on [Google][google] or [Baidu][baidu] image, also you can take the photo about water lily by yourself. Here are some examples collected by me:
+ You can find the `water lily` images on [Google][google] or [Baidu][baidu] image but you can take water lily photo by yourself. Here are some examples collected by me:
 
 <img align="left" width="300" height="290" src="/assets/image/blue_1.jpg">
 <img align="center" width="300" height="290" src="/assets/image/blue_4.jpg">
 <img align="left" width="300" height="290" src="/assets/image/purple_1.jpg">
 <img align="center" width="300" height="290" src="/assets/image/red_1.jpeg">
 
-I have collected 20 pictures for each kinds of water lily, the first 15 for train and the others for test. The train set is inadequate so images augmentation should be implemented.
+I have collected 20 pictures for each kind. The first 15 for train and the others for test. The train set is inadequate so images augmentation should be implemented.
 
 # images augmentation
 
@@ -69,7 +69,7 @@ seq = iaa.Sequential([
 
 images_aug = seq.augment_images(images)
 ```
-As you can see, the `images` has 4 dimensions shape *[images_num, width, height, channel]*. After augmentation, `images_aug` also has 4 dimensions, and the first dimension is the number of pictures. The follow pictures show one of the augmentation result.
+As you can see, the `images` have 4 dimensional shapes *[images_num, width, height, channel]*. After augmentation, `images_aug` also has 4 dimensions, and the first dimension is the number of pictures. The follow picture shows one of the augmentation result.
 
 <img align="left" width="300" height="290" src="/assets/image/blue_1.jpg">
 <img align="center" width="370" height="325" src="/assets/image/blue_1_aug.png">
@@ -98,7 +98,7 @@ My work directory appear as follow:
           ...
         - red_20.jpg
 
-The following code augment the training sets, the augmented images will be save into the corresponding directory. Each train image become 10(1+9) images.
+Here is a quick example, the augmented images will be saved into the corresponding directory. Each train image become 10(1+9) images.
 
 ```python
 import numpy as np
