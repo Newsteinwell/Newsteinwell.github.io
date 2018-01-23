@@ -16,8 +16,8 @@ In this section, I will show the detection result by different models and datase
 In the [model zoo][model zoo], this combination is the faster one, but it's performance is one of the worst one. Without retrain, it's detection result shows as following:
 
 <img align="center" width="600" height="430" src="/assets/image/before_train/ssd/image1.png">
-<img align="center" width="600" height="470" src="/assets/image/before_train/ssd/image2.png">
-<img align="center" width="600" height="410" src="/assets/image/before_train/ssd/image3.png">
+<img align="center" width="600" height="450" src="/assets/image/before_train/ssd/image2.png">
+<img align="center" width="600" height="380" src="/assets/image/before_train/ssd/image3.png">
 
 
 # data preparing
