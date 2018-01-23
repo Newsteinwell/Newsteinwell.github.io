@@ -19,15 +19,15 @@ In the [model zoo][model zoo], this combination is the faster one, but it's perf
 <img align="center" width="600" height="450" src="/assets/image/before_train/ssd/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/ssd/image3.png">
 
-As you can see, the result is pretty bad, only the middle one is detected with leaf (and the leaf is recognized as cake).
-
-### ssd + mobilenet + coco
+As you can see, the result is pretty bad, only the middle one is detected with leaf (and the leaf is recognized as cake). The first and third one with nothing be detected.
+### faster_rcnn + resnet50 + coco
 In the [model zoo][model zoo], this combination is the faster one, but it's performance is near the worst one. Without retrain, it's detection result shows as following:
 
 <img align="center" width="600" height="430" src="/assets/image/before_train/faster_resnet_coco/image1.png">
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet_coco/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet_coco/image3.png">
 
+This model give a better result than the former (ssd). But still not that good.  
 
 # data preparing
  You can find the `water lily` images on [Google][google] or [Baidu][baidu] image but you can also take water lily photo by yourself. Here are some examples collected by me:
