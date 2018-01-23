@@ -27,7 +27,7 @@ As you can see, the result is pretty bad, only the middle one is detected with l
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet_coco/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet_coco/image3.png">
 
-This model give a better result than the former (ssd). But still not that good.  
+This model give a better result than ssd. But still not that good.  
 
 ### faster_rcnn + resnet101 + coco
 
@@ -35,6 +35,7 @@ This model give a better result than the former (ssd). But still not that good.
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet101_coco/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet101_coco/image3.png">
 
+This model give a very similar result as the previous one.
 
 # data preparing
 
