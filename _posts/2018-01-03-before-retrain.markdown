@@ -16,8 +16,9 @@ In this section, I will show the detection result by different models and datase
 In the [model zoo][model zoo], this combination is the faster one, but it's performance is one of the worst one. Without retrain, it's detection result shows as following:
 
 <img align="center" width="600" height="430" src="/assets/image/before_train/ssd/image1.png">
-<img align="center" width="600" height="500" src="/assets/image/before_train/ssd/image2.png">
-<img align="center" width="600" height="500" src="/assets/image/before_train/ssd/image3.png">
+<img align="center" width="600" height="470" src="/assets/image/before_train/ssd/image2.png">
+<img align="center" width="600" height="410" src="/assets/image/before_train/ssd/image3.png">
+
 
 # data preparing
  You can find the `water lily` images on [Google][google] or [Baidu][baidu] image but you can also take water lily photo by yourself. Here are some examples collected by me:
