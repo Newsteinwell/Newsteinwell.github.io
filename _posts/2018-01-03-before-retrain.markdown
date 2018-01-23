@@ -9,6 +9,15 @@ categories: image
 # Tensorflow Object Detection
 Last year (2017), Google open a [tensorflow object detection api][tensorflow object detection], and there is a [tutorial][tensorflow object detection tutorial], which is easy to follow step by step. In the [model zoo][model zoo], they provide models pre-trained on the COCO dataset, the Kitti dataset, and the Open Images dataset. Also, there are several model combinations, like `faster-rcnn-inception-v2...`, `faster-rcnn-resnet...`, `ssd-inception-v2...`, `ssd-mobilenet-v2...` and so on. I will show the result of water lily detection use different pre-trained models.
 
+# Experiment and result
+In this section, I will show the detection result by different models and datasets.
+
+## ssd + mobilenet + coco
+In the [model zoo][model zoo], this combination is the faster one, but it's performance is one of the worst one. Without retrain, it's detection result shows as following:
+<img align="left" width="300" height="290" src="/assets/image/before_train/ssd/image1.png">
+<img align="left" width="300" height="290" src="/assets/image/before_train/ssd/image2.png">
+<img align="left" width="300" height="290" src="/assets/image/before_train/ssd/image3.png">
+
 
 # data preparing
  You can find the `water lily` images on [Google][google] or [Baidu][baidu] image but you can also take water lily photo by yourself. Here are some examples collected by me:
@@ -239,9 +248,6 @@ After augmentation, the work directory appear as follow (I delete all the .png i
 [tensorflow object detection]: https://github.com/tensorflow/models/tree/master/research/object_detection
 [tensorflow object detection tutorial]:https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
 [model zoo]: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
-
-
-
 
 
 
