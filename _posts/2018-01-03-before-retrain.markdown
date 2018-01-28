@@ -39,7 +39,7 @@ Faster_Rcnn is one of my favorite model in `Computer Vision`, and I will try to 
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet_coco/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet_coco/image3.png">
 
-This model detect more things than ssd model, but still not that good (the leaf of `Water Lily` is detected as `cake`, yep, it looks like cake according to the shape). And the time is:
+This model detect more things than ssd model, but still not that good (the leaf of `Water Lily` is still detected as `cake`. Yep, it looks like cake according to the shape). And the time is:
 
 1.438657617568969727e+01 s
 
@@ -77,18 +77,19 @@ The detection result show that nothing is detected by the model combination, so 
 
 7.521016120910644531e+00 s
 
-
 ### faster_rcnn + inception + resnet + open images  
 
 <img align="center" width="600" height="430" src="/assets/image/before_train/faster_inception_resnet_open/image1.png">
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_inception_resnet_open/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_inception_resnet_open/image3.png">
 
+When you first look the result, it's pretty good. The detection box just locate around the object. But when you look the objection category, the result is wired. It recognized the water lily as cat. And the time is much longer than the model before:  
 
+5.910059189796447754e+01 s
 
-5.910059189796447754e+01
-2.576212596893310547e+01
-2.450185585021972656e+01
+2.576212596893310547e+01 s
+
+2.450185585021972656e+01 s
 
 # data preparing
 
