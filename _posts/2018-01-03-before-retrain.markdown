@@ -29,6 +29,8 @@ I also calculate the model execute time for detecting these three pictures, the 
 
 9.798288345336914062e-02 s
 
+The first time is much longer than the others which contains the preparing time. You will see the similar result in the next several combination.
+
 ### faster_rcnn + resnet50 + coco
 
 Faster_Rcnn is one of my favorite model in computer vision, and I will try to explain the details about this model in the future post.
@@ -37,7 +39,15 @@ Faster_Rcnn is one of my favorite model in computer vision, and I will try to ex
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet_coco/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet_coco/image3.png">
 
-This model give a better result than ssd. But still not that good.  
+This model give a better result than ssd. But still not that good. And the time is:
+
+1.438657617568969727e+01 s
+
+6.586786985397338867e+00 s
+
+6.537290096282958984e+00 s
+
+The result shows that the time of faster_rcnn is much longer than the ssd counterpart.  
 
 ### faster_rcnn + resnet101 + coco
 
@@ -45,7 +55,26 @@ This model give a better result than ssd. But still not that good.
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet101_coco/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet101_coco/image3.png">
 
-This model give a very similar result as the previous one.
+To compare with the previous one, this model is just change the layer of ResNet from 50 to 100. It gives very similar results as the previous one. The time of detection is:
+
+1.590241503715515137e+01 s
+
+7.371901988983154297e+00 s
+
+7.448210954666137695e+00 s
+
+### faster_rcnn + resnet101 + kitti
+
+<img align="center" width="600" height="430" src="/assets/image/before_train/faster_resnet101_kitti/image1.png">
+<img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet101_kitti/image2.png">
+<img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet101_kitti/image3.png">
+
+1.590241503715515137e+01 s
+
+7.371901988983154297e+00 s
+
+7.448210954666137695e+00 s
+
 # data preparing
 
 <img align="left" width="300" height="290" src="/assets/image/blue_1.jpg">
