@@ -13,15 +13,22 @@ Last year (2017), Google open a [tensorflow object detection api][tensorflow obj
 In this section, I will show the detection result by different models and datasets.
 
 ### ssd + mobilenet + coco
-In the [model zoo][model zoo], this combination is the faster one, but it's performance is near the worst one. Without retrain, it's detection result shows as following:
+In the [model zoo][model zoo], this combination is the faster one, but it's performance (mAP) is almost the worst one. Without retrain, it's detection result shows as following:
 
 <img align="center" width="600" height="430" src="/assets/image/before_train/ssd/image1.png">
 <img align="center" width="600" height="450" src="/assets/image/before_train/ssd/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/ssd/image3.png">
 
 As you can see, the result is pretty bad, only the middle one is detected with leaf (and the leaf is recognized as cake). The first and third one with nothing be detected.
+I also calculate the model execute time for detecting these three pictures, the result shows as follow:
 
+2.918037891387939453e+00 s
+8.569598197937011719e-02 s
+9.798288345336914062e-02 s
+ 
 ### faster_rcnn + resnet50 + coco
+
+Faster_Rcnn is one of my favorite model in computer vision, and I will try to explain the details about this model in the future post.
 
 <img align="center" width="600" height="430" src="/assets/image/before_train/faster_resnet_coco/image1.png">
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet_coco/image2.png">
@@ -36,7 +43,6 @@ This model give a better result than ssd. But still not that good.
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet101_coco/image3.png">
 
 This model give a very similar result as the previous one.
-
 # data preparing
 
 <img align="left" width="300" height="290" src="/assets/image/blue_1.jpg">
