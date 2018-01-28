@@ -20,12 +20,15 @@ In the [model zoo][model zoo], this combination is the faster one, but it's perf
 <img align="center" width="600" height="400" src="/assets/image/before_train/ssd/image3.png">
 
 As you can see, the result is pretty bad, only the middle one is detected with leaf (and the leaf is recognized as cake). The first and third one with nothing be detected.
+
 I also calculate the model execute time for detecting these three pictures, the result shows as follow:
 
 2.918037891387939453e+00 s
+
 8.569598197937011719e-02 s
+
 9.798288345336914062e-02 s
- 
+
 ### faster_rcnn + resnet50 + coco
 
 Faster_Rcnn is one of my favorite model in computer vision, and I will try to explain the details about this model in the future post.
