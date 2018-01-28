@@ -33,13 +33,13 @@ The first time is much longer than the others which contains the preparing time.
 
 ### faster_rcnn + resnet50 + coco
 
-Faster_Rcnn is one of my favorite model in computer vision, and I will try to explain the details about this model in the future post.
+Faster_Rcnn is one of my favorite model in `Computer Vision`, and I will try to explain the details about this model in the future post.
 
 <img align="center" width="600" height="430" src="/assets/image/before_train/faster_resnet_coco/image1.png">
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet_coco/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet_coco/image3.png">
 
-This model give a better result than ssd. But still not that good. And the time is:
+This model detect more things than ssd model, but still not that good (the leaf of `Water Lily` is detected as `cake`, yep, it looks like cake according to the shape). And the time is:
 
 1.438657617568969727e+01 s
 
@@ -69,11 +69,26 @@ To compare with the previous one, this model is just change the layer of ResNet 
 <img align="center" width="600" height="450" src="/assets/image/before_train/kitti/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/kitti/image3.png">
 
-1.590241503715515137e+01 s
+The detection result show that nothing is detected by the model combination, so maybe you shouldn't use this combination without retrain. The execute time show as follow:
 
-7.371901988983154297e+00 s
+1.128367519378662109e+01 s
 
-7.448210954666137695e+00 s
+7.326383113861083984e+00 s
+
+7.521016120910644531e+00 s
+
+
+### faster_rcnn + inception + resnet + open images  
+
+<img align="center" width="600" height="430" src="/assets/image/before_train/faster_inception_resnet_open/image1.png">
+<img align="center" width="600" height="450" src="/assets/image/before_train/faster_inception_resnet_open/image2.png">
+<img align="center" width="600" height="400" src="/assets/image/before_train/faster_inception_resnet_open/image3.png">
+
+
+
+5.910059189796447754e+01
+2.576212596893310547e+01
+2.450185585021972656e+01
 
 # data preparing
 
