@@ -65,9 +65,9 @@ To compare with the previous one, this model is just change the layer of ResNet 
 
 ### faster_rcnn + resnet101 + kitti
 
-<img align="center" width="600" height="430" src="/assets/image/before_train/faster_resnet101_kitti/image1.png">
-<img align="center" width="600" height="450" src="/assets/image/before_train/faster_resnet101_kitti/image2.png">
-<img align="center" width="600" height="400" src="/assets/image/before_train/faster_resnet101_kitti/image3.png">
+<img align="center" width="600" height="430" src="/assets/image/before_train/kitti/image1.png">
+<img align="center" width="600" height="450" src="/assets/image/before_train/kitti/image2.png">
+<img align="center" width="600" height="400" src="/assets/image/before_train/kitti/image3.png">
 
 1.590241503715515137e+01 s
 
