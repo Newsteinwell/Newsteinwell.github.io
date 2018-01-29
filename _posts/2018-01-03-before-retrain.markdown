@@ -91,7 +91,7 @@ When you first look at the result, it's pretty good. The detection box just loca
 
 2.450185585021972656e+01 s
 
-The jupyter notebook code is [here][/assets/image/code/object_detection_tutorial.ipynb].
+The jupyter notebook code is [here][code address].
 
 
 # data preparing
@@ -322,7 +322,7 @@ After augmentation, the work directory appear as follow (I delete all the .png i
 [tensorflow object detection]: https://github.com/tensorflow/models/tree/master/research/object_detection
 [tensorflow object detection tutorial]:https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
 [model zoo]: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
-
+[code address]: https://github.com/Newsteinwell/Newsteinwell.github.io/blob/master/assets/code/object_detection_tutorial.ipynb]
 
 
 [google]: https://www.google.com
