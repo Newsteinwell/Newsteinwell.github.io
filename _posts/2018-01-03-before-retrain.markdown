@@ -19,9 +19,9 @@ In the [model zoo][model zoo], this combination is the faster one, but it's perf
 <img align="center" width="600" height="450" src="/assets/image/before_train/ssd/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/ssd/image3.png">
 
-As you can see, the result is pretty bad, only the middle one is detected with leaf (and the leaf is recognized as cake). The first and third one with nothing be detected.
+As you can see, the result is pretty bad, only the middle one is detected with leaf (and the leaf is recognized as `cake`). The first and third one with nothing be detected.
 
-I also calculate the model execute time for detecting these three pictures, the result shows as follow:
+I also record the model execute time for detecting these three pictures, the result shows as follow:
 
 2.918037891387939453e+00 s
 
@@ -29,7 +29,7 @@ I also calculate the model execute time for detecting these three pictures, the 
 
 9.798288345336914062e-02 s
 
-The first time is much longer than the others which contains the preparing time. You will see the similar result in the next several combination.
+The time to detect first picture is much longer than the others which contains the preparing time. You will see the similar result in the next several combinations.
 
 ### faster_rcnn + resnet50 + coco
 
@@ -69,7 +69,7 @@ To compare with the previous one, this model is just change the layer of ResNet 
 <img align="center" width="600" height="450" src="/assets/image/before_train/kitti/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/kitti/image3.png">
 
-The detection result show that nothing is detected by the model combination, so maybe you shouldn't use this combination without retrain. The execute time show as follow:
+The detection result show that nothing is detected by this model combination, so maybe you shouldn't use this combination without retrain. The execute time show as follow:
 
 1.128367519378662109e+01 s
 
@@ -83,13 +83,16 @@ The detection result show that nothing is detected by the model combination, so 
 <img align="center" width="600" height="450" src="/assets/image/before_train/faster_inception_resnet_open/image2.png">
 <img align="center" width="600" height="400" src="/assets/image/before_train/faster_inception_resnet_open/image3.png">
 
-When you first look the result, it's pretty good. The detection box just locate around the object. But when you look the objection category, the result is wired. It recognized the water lily as cat. And the time is much longer than the model before:  
+When you first look at the result, it's pretty good. The detection box just locate around the object. But when you check the objection category, the result is wired. It recognized the water lily as cat. And the time is much longer than the model before:  
 
 5.910059189796447754e+01 s
 
 2.576212596893310547e+01 s
 
 2.450185585021972656e+01 s
+
+The jupyter notebook code is [here][/assets/image/code/object_detection_tutorial.ipynb].
+
 
 # data preparing
 
