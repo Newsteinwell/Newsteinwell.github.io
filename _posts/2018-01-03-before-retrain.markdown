@@ -9,7 +9,7 @@ categories: image
 # Tensorflow Object Detection
 Last year (2017), Google open a [tensorflow object detection api][tensorflow object detection], and there is a [tutorial][tensorflow object detection tutorial], which is easy to follow step by step. In the [model zoo][model zoo], they provide models pre-trained on the COCO dataset, the Kitti dataset, and the Open Images dataset. Also, there are several model combinations, like `faster-rcnn-inception-v2...`, `faster-rcnn-resnet...`, `ssd-inception-v2...`, `ssd-mobilenet-v2...` and so on. I will show the result of water lily detection use different pre-trained models.
 
-# Experiment and result
+# Experiment and Result
 In this section, I will show the detection result by different models and datasets.
 
 ### ssd + mobilenet + coco
