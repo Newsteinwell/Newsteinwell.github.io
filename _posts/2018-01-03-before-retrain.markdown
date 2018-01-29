@@ -322,7 +322,7 @@ After augmentation, the work directory appear as follow (I delete all the .png i
 [tensorflow object detection]: https://github.com/tensorflow/models/tree/master/research/object_detection
 [tensorflow object detection tutorial]:https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
 [model zoo]: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
-[code address]: https://github.com/Newsteinwell/Newsteinwell.github.io/blob/master/assets/code/object_detection_tutorial.ipynb]
+[code address]: https://github.com/Newsteinwell/Newsteinwell.github.io/blob/master/assets/code/object_detection_tutorial.ipynb
 
 
 [google]: https://www.google.com
