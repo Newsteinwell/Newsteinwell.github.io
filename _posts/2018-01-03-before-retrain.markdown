@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2 before retrain"
+title:  "Before Retrain"
 date:   2018-01-03 22:46:08 +0800
 categories: image
 ---
