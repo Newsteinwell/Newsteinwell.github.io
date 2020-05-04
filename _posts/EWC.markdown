@@ -5,6 +5,10 @@ date:   2020-05-04 21:00:00 +0800
 categories: jekyll update
 mathjax: true
 ---
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+
 打算在这里写一写关于贝叶斯持续学习的东西，
 
 In N-dimensional simplex noise, the squared kernel summation radius $r^2$ is $\frac 1 2$
